@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/skills.css" />
+  </head>
+  <body>
+    <h1>Skils</h1>
+
+    <% skills.forEach((skill)=>{ %>
+    <p>
+      <%=skill.id%> .
+      <a href="/skills/<%=skill.id%>"> <%=skill.skill %> </a>
+    </p>
+    <%});%>
+
+    <form action="/skills" method="POST">
+      <input type="text" name="skill" aria-autocomplete="none" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

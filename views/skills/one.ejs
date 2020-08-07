@@ -1,0 +1,11 @@
+<body>
+  <h1>My skill <%= skill.id%></h1>
+
+  <p>
+    <%= skill.skill%>
+  </p>
+
+  <form method="POST" action="/skills/<%= skill.id%>?_method=DELETE">
+    <button type="submit">Delete</button>
+  </form>
+</body>
