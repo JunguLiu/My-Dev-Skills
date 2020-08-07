@@ -1,3 +1,3 @@
 # My-Dev-Skills
 
-loalhost:4000
+localhost:4000
